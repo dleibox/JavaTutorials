@@ -15,7 +15,7 @@ import java.util.List;
 public class HelloWorldController {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ResponseBody
-    public List<String> ListJson(){
+    public List<String> helloJson(){
         List<String> lst = new ArrayList<String>();
         lst.add("Hello");
         lst.add("Json");
