@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:jtds:sqlserver://localhost:1433</property>
+        <property name="connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+        <property name="connection.username">java</property>
+        <property name="connection.password">password</property>
+        <mapping class="com.firststep.hibernate.model.CountryEntity"/>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
