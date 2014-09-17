@@ -1,9 +1,12 @@
-package com.firststep.spring;
+package com.firststep.app;
 
+import com.firststep.spring.HelloWorldPrinter;
+import com.firststep.spring.HelloWorldService;
+import com.firststep.spring.ServiceBeans;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * Created by daniel on 9/15/2014.
+ * Created by daniel on 9/17/2014.
  */
 public class Application {
     public static void main(String[] args) {
