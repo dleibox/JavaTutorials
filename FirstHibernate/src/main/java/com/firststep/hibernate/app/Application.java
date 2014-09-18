@@ -1,4 +1,4 @@
-package com.firststep.app;
+package com.firststep.hibernate.app;
 
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
@@ -12,7 +12,7 @@ import org.hibernate.service.ServiceRegistry;
 import java.util.Map;
 
 /**
- * Created by daniel on 9/17/2014.
+ * Created by daniel on 9/18/2014.
  */
 public class Application {
     private static final SessionFactory sessionFactory;

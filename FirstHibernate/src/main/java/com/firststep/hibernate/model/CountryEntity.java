@@ -118,6 +118,6 @@ public class CountryEntity {
 
     @Override
     public String toString(){
-        return super.toString() + " (" + this.iso + ") " + this.name;
+        return super.toString() + " (iso=" + this.iso + ", name=" + this.name + ")";
     }
 }
