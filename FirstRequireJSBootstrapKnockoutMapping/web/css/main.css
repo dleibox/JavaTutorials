@@ -1,0 +1,22 @@
+.waiting {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    text-align: center;
+    background: rgba( 222, 222, 222, .8 )
+    /*url('http://sampsonresume.com/labs/pIkfp.gif')
+    50% 50%
+    no-repeat;*/
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+body.loading .waiting {
+    display: block;
+}

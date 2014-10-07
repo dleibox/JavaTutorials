@@ -37,6 +37,19 @@ requirejs.config({
 //define(function() {
 define(["jquery", "knockout", "bootstrap"], function($, ko) {
     $("pre").text($("head").html().replace(/script><script/g, "script>\r\n\r\n<script"));
+
+    // demo waiting logo
+    $body = $("body");
+    $(document).on({
+        ajaxStart: function() { $body.addClass("loading"); }//,
+        //ajaxStop: function() { $body.removeClass("loading"); }
+    });
+    // Initiates an AJAX request on click
+    $(document).on("click", function(){
+        $.get("/ajax");
+    });
+    // demo end
+
     //ko.mapping
     //return {};
 });
