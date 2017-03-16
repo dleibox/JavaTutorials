@@ -26,4 +26,5 @@
             <version>${spring.version}</version>
         </dependency>
     </dependencies>
+    <packaging>war</packaging>
 </project>
